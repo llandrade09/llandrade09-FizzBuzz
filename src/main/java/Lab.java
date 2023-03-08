@@ -15,6 +15,22 @@ public class Lab {
      * divisible by both, return 'FizzBuzz'. If none of these are true, return a blank string "".
      */
     public String FizzBuzzGen(int n){
-        return "";
+       int m = n%3;
+       int y = n%5;
+       String oe = "";
+       
+      
+       if(m==0){
+            //System.out.println("x="+m);
+        oe = "Fizz";
+       }
+       if(y ==0){
+           // System.out.println("x2="+y);
+           oe = "Buzz";
+       }
+        if(y==0 && m ==0){
+           oe = "FizzBuzz";
+       }
+        return oe;
     }
 }
